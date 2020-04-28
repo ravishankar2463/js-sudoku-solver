@@ -35,7 +35,7 @@ for (let line = 0; line < grid.length; line++){
 
 let solvedBoard = grid
 
-// functino for checking whether a number fits in the cell or not
+// function for checking whether a number fits in the cell or not
 const possible = (y,x,n) => {
     for(let i=0; i<9; i++){
         if (solvedBoard[y][i] == n){
@@ -47,7 +47,6 @@ const possible = (y,x,n) => {
             return false
         }
     }
-    //fixed this in the code but still not solving
     x0 = Math.floor(x/3) * 3
     y0 = Math.floor(y/3) * 3
     for(let i=0; i<3; i++){
@@ -61,8 +60,7 @@ const possible = (y,x,n) => {
 }
 
 
-//function for recursively solving the sudoku,
-// this needs to be fixed
+//function for recursively solving the sudoku using backtracking
 function solve(){
     for(let y=0;y<9;y++){
         for(let x=0;x<9;x++){
