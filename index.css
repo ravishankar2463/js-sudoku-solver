@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#sudokuBoard,#solvedBoard{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 50px;
+    height: max-content;
+    width: 500px;
+}
+
+/* .blockline {} */
+
+.block{
+    height: 70px;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#sudokuBoard .block{
+    border: 1.5px solid rgb(255, 131, 131);
+}
+
+#solvedBoard .block{
+    border: 1.5px solid rgb(131, 255, 131);   
+}

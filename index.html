@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="./index.css">
+    <link 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col-6">
+            <h1 class="mt-5 text-center text-muted">Original Sudoku Given : </h1>
+            <div id="sudokuBoard" class="mx-auto">
+            </div>
+        </div>
+        <div class="col-6">
+            <h1 class="mt-5 text-center text-muted">Solution to The Given Sudoku : </h1>
+            <div id="solvedBoard" class="mx-auto mb-5">
+            </div>
+            <button class="d-block btn btn-info mx-auto text-center mt-5" onclick="solvepuzzle()">solve</button>
+            <h1 id="errmsg" class="mb-5 text-center text-muted"></h1>
+            </div>
+        </div>
+    <script src="./sudokusolver.js"></script>
+</body>
+</html>
